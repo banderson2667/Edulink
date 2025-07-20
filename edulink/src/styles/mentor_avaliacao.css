@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/*body {
+    background-color: #eaeaea;
+    color: #444;
+    padding-bottom: 70px;
+}*/
+
+.header {
+    background-color: #5c4cff;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    font-size: 1.0rem;
+    position: relative;
+}
+
+.back-button {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 90px 30px 30px;
+}
+
+.evaluation-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    padding: 30px;
+}
+
+.evaluation-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5c4cff;
+}
+
+.mentor-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.mentor-pic {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 2px solid #5c4cff;
+}
+
+.mentor-details h3 {
+    margin-bottom: 5px;
+}
+
+.mentor-details p {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.rating-section {
+    margin-bottom: 25px;
+}
+
+.rating-title {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.rating-stars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.star {
+    font-size: 2.5rem;
+    color: #bbb;
+    cursor: pointer;
+    transition: color 0.2s;
+    margin: 0 5px;
+}
+
+.star:hover,
+.star.active {
+    color: #ffcc00;
+}
+
+.rating-labels {
+    display: flex;
+    justify-content: space-between;
+    color: #777;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background-color: #5c4cff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #4a3bcc;
+}
+
+.btn-outline {
+    background-color: white;
+    color: #5c4cff;
+    border: 1px solid #5c4cff;
+}
+
+.btn-outline:hover {
+    background-color: #f0f0ff;
+}
+
+.bottom-nav {
+  position: fixed;
+  top: 0;
+  left: 0; /* importante para ancorar no canto esquerdo */
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 999; /* para garantir que fique visível */
+}
+
+
+.nav-item {
+    text-align: center;
+    color: #777;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: color 0.3s;
+}
+
+.nav-item:hover {
+    color: #5c4cff;
+}
+
+.nav-item.active {
+    color: #5c4cff;
+    font-weight: bold;
+}
+
+.nav-icon {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 40px 20px;
+    }
+    
+    .evaluation-container {
+        margin: 15px;
+        padding: 20px;
+    }
+    
+    .mentor-pic {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .star {
+        font-size: 2rem;
+    }
+}

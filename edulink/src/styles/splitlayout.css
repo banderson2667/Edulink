@@ -1,0 +1,29 @@
+.split-container {
+  display: flex;
+  height: 100vh; /* Altura total da viewport */
+}
+
+.left-panel, .right-panel {
+  flex: 1; /* Divide o espaço igualmente */
+  padding: 20px;
+  overflow-y: auto; /* Adiciona scroll se necessário */
+}
+
+.left-panel {
+  background-color: #f5f5f5;
+  border-right: 1px solid #ddd;
+}
+.aba{
+  background-color: #6200EE;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px 5px;
+}
+.usuário{
+  background-color: #ccc;
+  color: #6200EE;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px 5px;
+}
