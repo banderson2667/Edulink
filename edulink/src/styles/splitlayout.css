@@ -4,9 +4,9 @@
 }
 
 .left-panel, .right-panel {
-  flex: 1; /* Divide o espaço igualmente */
+  flex: 1; 
   padding: 20px;
-  overflow-y: auto; /* Adiciona scroll se necessário */
+  overflow-y: auto;
 }
 
 .left-panel {

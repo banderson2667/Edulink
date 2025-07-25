@@ -19,7 +19,12 @@ const chat= () => {
               {/* Conteúdo do lado esquerdo */}
               <div className='aba'><h3>Conversas</h3></div><br></br>
               <div className='usuário'><p>Laís Calvacante</p></div>
+              <div classname='chat-container'>
+                <div className='message'></div>
+                {/* <button type='submit'>Enviar</button> */}
+              </div>
             </div>
+            
             <div className="right-panel">
               {/* Conteúdo do lado direito */}
               <div className='aba'><h3>Mentores</h3></div><br></br>

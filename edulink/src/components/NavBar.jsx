@@ -1,29 +1,9 @@
 import React , { useState} from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/navbar.css';
+import { HomeIcon, EduLinkIcon,AccountIcon, ChatIcon, SearchIcon } from './icones';
 
-// function Navbar() {
-//   return (
-//     <div className="bottom-nav">
-//       <Link to="/home" className="nav-item">
-//         <span className="nav-icon">🏠</span> HOME
-//       </Link>
-//       <Link to="/pesquisa" className="nav-item">
-//         <span className="nav-icon">🔍</span> PESQUISA
-//       </Link>
-//       <Link to="/" className="nav-item">
-//         <span className="nav-icon">📚</span> EDULINK
-//       </Link>
-//       <Link to="/chat" className="nav-item">
-//         <span className="nav-icon">💬</span> CHAT
-//       </Link>
-//       <Link to="/edicao_perfil" className="nav-item">
-//         <span className="nav-icon">👤</span> CONTA
-//       </Link>
-//     </div>
 
-//   );
-// }
 function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -34,16 +14,16 @@ function Navbar() {
   return (
     <div className="bottom-nav">
       <Link to="/home" className="nav-item">
-        <span className="nav-icon">🏠</span> HOME
+        <span className="nav-icon"><HomeIcon/></span> HOME
       </Link>
       <Link to="/pesquisa" className="nav-item">
-        <span className="nav-icon">🔍</span> PESQUISA
+        <span className="nav-icon"><SearchIcon/></span> PESQUISA
       </Link>
       <Link to="/" className="nav-item">
-        <span className="nav-icon">📚</span> EDULINK
+        <span className="nav-icon"><EduLinkIcon/></span> EDULINK
       </Link>
       <Link to="/chat" className="nav-item">
-        <span className="nav-icon">💬</span> CHAT
+        <span className="nav-icon"><ChatIcon/></span> CHAT
       </Link>
 
       {/* Item de conta com dropdown */}
@@ -53,12 +33,12 @@ function Navbar() {
           onClick={toggleDropdown}
           aria-expanded={isDropdownOpen}
         >
-          <span className="nav-icon">👤</span> CONTA
+          <span className="nav-icon"><AccountIcon/></span> CONTA
         </button>
 
         {isDropdownOpen && (
           <div className="dropdown-menu">
-            <Link to="/edicao_perfil" className="dropdown-item">
+            <Link to="/perfil_estudante" className="dropdown-item">
               Meu Perfil
             </Link>
             <Link to="/configuracoes" className="dropdown-item">
